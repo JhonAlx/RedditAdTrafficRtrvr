@@ -1,4 +1,4 @@
-﻿<controls:MetroWindow  x:Class="RedditAdMgr.LoginWindow"
+﻿<controls:MetroWindow  x:Class="RedditAdTrafficRtrvr.LoginWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:controls="http://metro.mahapps.com/winfx/xaml/controls" 

@@ -5,10 +5,10 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using Polly.Retry;
-using RedditAdMgr.Model;
+using RedditAdTrafficRtrvr.Model;
 using Polly;
 
-namespace RedditAdMgr
+namespace RedditAdTrafficRtrvr
 {
     /// <summary>
     ///     Interaction logic for LoginWindow.xaml
@@ -98,7 +98,7 @@ namespace RedditAdMgr
 
                                 if (result == MessageBoxResult.OK)
                                 {
-                                    var main = new MainForm {Cookies = Cookies};
+                                    var main = new MainWindow {Cookies = Cookies};
                                     Application.Current.MainWindow = main;
                                     Close();
                                     main.Show();
