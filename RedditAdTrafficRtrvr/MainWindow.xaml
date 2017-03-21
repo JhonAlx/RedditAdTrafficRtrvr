@@ -42,7 +42,7 @@
                 <TextBox Name="StatusTextBlock" Width="550" Height="220" TextWrapping="Wrap" ScrollViewer.VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled" BorderThickness="1" BorderBrush="Black" IsReadOnly="True"></TextBox>
             </Grid>
             <Grid Grid.Row="1">
-                <ProgressBar Name="GeneralProgressBar" Width="180" />
+                <ProgressBar Name="GeneralProgressBar" Width="180" IsIndeterminate="True"/>
             </Grid>
         </Grid>
     </Grid>

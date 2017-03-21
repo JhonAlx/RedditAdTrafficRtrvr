@@ -23,6 +23,8 @@ namespace RedditAdTrafficRtrvr
         public MainWindow()
         {
             InitializeComponent();
+
+            GeneralProgressBar.Visibility = Visibility.Hidden;
         }
 
         private void DestinationFolderPickerButton_Click(object sender, RoutedEventArgs e)
@@ -75,6 +77,7 @@ namespace RedditAdTrafficRtrvr
         private async void DownloadTrafficDataButton_Click(object sender, RoutedEventArgs e)
         {
             Log("INFO", "Starting URL gathering process...");
+            GeneralProgressBar.Visibility = Visibility.Visible;
 
             var doc = new HtmlDocument();
             var path = DestinationFolderTextBox.Text;
@@ -153,6 +156,7 @@ namespace RedditAdTrafficRtrvr
             }
             while (stop != true);
 
+            GeneralProgressBar.Visibility = Visibility.Hidden;
             Log("INFO", "Ended URL gathering process...");
         }
 
